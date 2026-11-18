@@ -1,8 +1,6 @@
 package com.senxia.adskip
 
 import android.accessibilityservice.AccessibilityService
-import android.accessibilityservice.AccessibilityServiceInfo
-import android.os.Build
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
@@ -44,17 +42,7 @@ class AdSkipService : AccessibilityService() {
 
     override fun onServiceConnected() {
         super.onServiceConnected()
-        val info = AccessibilityServiceInfo().apply {
-            eventTypes = AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED or
-                    AccessibilityEvent.TYPE_WINDOW_CONTENT_CHANGED
-            feedbackType = AccessibilityServiceInfo.FEEDBACK_GENERIC
-            flags = AccessibilityServiceInfo.FLAG_REPORT_VIEW_IDS or
-                    AccessibilityServiceInfo.FLAG_RETRIEVE_INTERACTIVE_WINDOWS or
-                    AccessibilityServiceInfo.FLAG_INCLUDE_NOT_IMPORTANT_VIEWS
-            canRetrieveWindowContent = true
-            notificationTimeout = 50
-        }
-        serviceInfo = info
+        // 事件类型、flag、canRetrieveWindowContent 已在 res/xml/accessibility_config.xml 中声明
         Log.i(TAG, "无障碍服务已连接")
     }
 
