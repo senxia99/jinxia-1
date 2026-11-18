@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AdSkip" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#FF6B3FA0</item>
+        <item name="colorPrimaryDark">#FF4E2D75</item>
+        <item name="colorAccent">#FFFF8F00</item>
+    </style>
+</resources>

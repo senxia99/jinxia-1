@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">跳广告助手</string>
+    <string name="accessibility_desc">自动跳过开屏广告、摇一摇广告与应用内弹窗广告。仅在你主动开启后生效。</string>
+    <string name="welcome_title">跳广告助手</string>
+    <string name="enable_accessibility">开启无障碍服务</string>
+    <string name="accessibility_status">服务状态：%1$s</string>
+    <string name="status_on">已开启 ✅</string>
+    <string name="status_off">未开启 ❌</string>
+    <string name="tips_title">在小米/HyperOS 上稳定运行，请依次开启：</string>
+    <string name="tips">1. 无障碍：点上方按钮开启本服务\n2. 自启动：设置 → 应用设置 → 应用管理 → 本应用 → 自启动 打开\n3. 省电策略：设为「无限制」\n4. 后台设置：允许后台活动，最近任务里下拉加锁\n5. 摇一摇根治：对本机常误跳转的 App，在 设置 → 应用管理 → 该App → 权限 里关闭「获取设备动作与方向」\n\n提示：开屏/弹窗广告靠抢点「跳过」；摇一摇免 root 只能尽力抢点，关动作权限才能从源头阻断。</string>
+    <string name="open_settings">打开系统设置</string>
+</resources>
